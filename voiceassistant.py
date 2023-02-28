@@ -5,7 +5,6 @@ import datetime as dt
 import pyttsx3
 import os
 
-
 def speak(text2speak):
     engine = pyttsx3.init()
     engine.say(text2speak)
@@ -37,6 +36,8 @@ if __name__ == "__main__":
         speak("Good Evening!")
     
     while True:
+    
+
         finText = takeText().lower()
         if "open discord" in finText:
             subprocess.Popen(
